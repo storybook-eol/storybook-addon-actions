@@ -59,7 +59,7 @@ var ActionLogger = function (_React$Component) {
       });
       var actions = [].concat(_toConsumableArray(this.state.actions));
       var previous = actions.length && actions[0];
-      if (previous && (0, _deepEqual2.default)(previous.data, action.data)) {
+      if (previous && (0, _deepEqual2.default)(previous.data, action.data, { strict: true })) {
         previous.count++;
       } else {
         action.count = 1;
