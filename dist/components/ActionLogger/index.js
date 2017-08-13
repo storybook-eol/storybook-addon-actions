@@ -10,6 +10,10 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
+var _propTypes = require('prop-types');
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 var _reactInspector = require('react-inspector');
 
 var _reactInspector2 = _interopRequireDefault(_reactInspector);
@@ -108,8 +112,8 @@ var ActionLogger = function (_Component) {
 }(_react.Component);
 
 ActionLogger.propTypes = {
-  onClear: _react2.default.PropTypes.func,
-  actions: _react2.default.PropTypes.array
+  onClear: _propTypes2.default.func,
+  actions: _propTypes2.default.array
 };
 
 exports.default = ActionLogger;

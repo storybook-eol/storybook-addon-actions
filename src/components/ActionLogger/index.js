@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import Inspector from 'react-inspector';
 import style from './style';
 
@@ -52,8 +53,8 @@ class ActionLogger extends Component {
 }
 
 ActionLogger.propTypes = {
-  onClear: React.PropTypes.func,
-  actions: React.PropTypes.array,
+  onClear: PropTypes.func,
+  actions: PropTypes.array,
 };
 
 export default ActionLogger;
